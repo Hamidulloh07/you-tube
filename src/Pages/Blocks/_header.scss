@@ -1,0 +1,45 @@
+.container1 {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.Header {
+  
+  background-color: white;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.055);
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.search-input {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0b0c11;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  padding: 6px 20px 5px 15px;
+  margin-left: 35px;
+  display: inline-block;
+  width: 400px;
+  background: #EBEBEB;
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  border-radius: 22px;
+}
+
+.search-button {
+  border: none;
+  background-color: transparent;
+  display: inline-block;
+  border-radius: 50%;
+  bottom: 7px;
+  right: 10px;
+}

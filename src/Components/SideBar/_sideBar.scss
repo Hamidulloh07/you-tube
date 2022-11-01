@@ -1,0 +1,77 @@
+.sideBar {
+  position: fixed;
+  background-color: #FFFFFF;
+  z-index: 1;
+  top: 65px;
+  bottom: 0;
+     width: 200px; 
+    height: 87vh;
+    padding-right: 5px;
+    overflow-y: scroll;
+}::-webkit-scrollbar {
+  width: 6px;
+
+
+
+}::-webkit-scrollbar-thumb {
+  background: #626262;
+  border-radius: 10px;
+}
+
+
+.sideBrItem {
+  margin-bottom: 25px;
+}
+
+.sideBrItem img {
+  display: inline-block;
+
+  margin-right: 10px;
+  margin-top: -1px;
+}
+
+.sideBrItem p {
+  margin: 0;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #898989;
+}
+
+.sideBrItem:nth-child(1) p {
+  color: red;
+}
+
+.sideBrItem:nth-child(3) {
+  margin-bottom: 50px;
+}
+
+.subTitle {
+  font-family: sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 23px;
+color: #000000;
+}
+
+.canal-div {
+  margin-top: 50px;
+}
+
+.side-item p{
+  margin: 0;
+  margin-left: 11px;
+font-family: sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 20px;
+color: #898989;
+}
+
+.setting {
+  margin-top: 80px;
+}
