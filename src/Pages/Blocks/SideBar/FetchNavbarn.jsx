@@ -6,13 +6,13 @@ const FetchNavbarn = () => {
   const [users, setUser] = useState([]);
 
   useEffect(() => {
+    const apiFunction = async ()  => {
+      const res  = await fetch("https://reqres.in/api/users/")
+      const data = res.json()
+      setUser(data.data)
+    }
+    apiFunction()
 
-    fetch("https://reqres.in/api/users/")
-      .then((res) => res.json())
-      .then((data) => {
-        setUser(data.data)
-      })
-    
   }, []);
 
 
@@ -21,7 +21,7 @@ const FetchNavbarn = () => {
 
         <ul className="sid2Bar2 list-unstyled">
       {
-        users.slice(0, 6).map((user, i) => (
+        users.slice(1, 6).map((user, i) => (
         <li key={user.id} className="side-item mb-4">
           <Link to={'/channel/'+ user.id } className='d-flex align-items-center text-decoration-none'>
             <img className='side-item-img' src={user.avatar} alt={user.last_name} width={40} height={40}/>
