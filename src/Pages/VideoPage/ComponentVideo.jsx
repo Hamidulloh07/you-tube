@@ -34,8 +34,10 @@ const ComponentVideo = () => {
                 <h3 className='text-black fs-4'>{user.title}</h3>
                 <div>
                   <span>
-                    {`${user.id}k views`}
+                    {`${user.id}k views,  `}
                   </span>
+                  
+                  <span>{`  `}</span>
                   <span>
                     Dollie Blair
                   </span>
