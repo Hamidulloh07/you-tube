@@ -1,0 +1,69 @@
+.Channels {
+  margin-left: 205px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+.avatar-channel {
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.Subscribe {
+  padding: 10px 20px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  background: #FF0000;
+  border-radius: 20px;
+  text-align: center;
+
+  color: #FFFFFF;
+
+}
+
+.channel-navber li {
+  margin-right: 60px;
+  
+}
+
+.channel-navber li a {
+  text-decoration: none;
+  font-family:sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #251818;
+}
+
+.channelItem:nth-child(1) a  {
+  color: red;
+  text-decoration: underline;
+}
+
+.sideBar2 {
+  display: flex;
+  width: 1130px;
+  height: 400px;
+  overflow-x: scroll;
+}
+
+.single-tan {
+  width: 800px;
+  margin-bottom: 30px;
+}
+
+.yan {
+  width: 300px;
+}

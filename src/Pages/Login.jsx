@@ -30,11 +30,11 @@ User Password: ${form.password}`,
   };
 
   return (
-    <div className=" pt-4 h-100">
+    <div className="h-100">
       <div className="container ">
         <Card
-          style={{ backgroundColor: "gray" }}
-          className="w-50 mx-auto text-center p-4 rounded-3 mt-5"
+          style={{ backgroundColor: "gray", width:"400px" }}
+          className=" mx-auto text-center p-4 rounded-3 "
         >
 
           <h1

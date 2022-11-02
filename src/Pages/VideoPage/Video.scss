@@ -1,0 +1,81 @@
+.video-div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.video-img {
+  border-radius: 20px;
+}
+
+.video-item span {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #192646;
+}
+
+.video-item:nth-child(4) Button {
+  width: 5px;
+}
+
+.avatar-profil {
+  border-radius: 50%;
+}
+
+.video-text {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+.button2 {
+  width: 154px;
+  display: inline-block;
+  border:none;
+  background: #FF0000;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.idVideoDiv {
+  width: 900px;
+}
+
+.thenFetch {
+  text-align: center;
+  width: 430px;
+  display: block;
+}
+
+.thenFetch h2 {
+  text-align: center;
+  margin-left: 30px;
+}
+
+.itemm {
+  margin-left: 0;
+  width: 300px;
+}
+
+.compApi {
+}
+.sideBar {
+  width: 100%;
+  height: 100px;
+  overflow-x: scroll;
+}

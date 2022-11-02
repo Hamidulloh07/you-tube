@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './_sideBar.scss'
 import Home from './image/Home.svg'
 import BelleBriggs from './image/BelleBriggs.svg'
@@ -18,10 +18,12 @@ import Showmore from './image/Showmore.svg'
 import Likedvideos from './image/Likedvideos.svg'
 import Subscriptions from './image/Subscriptions.svg'
 import Music from './image/Music.svg'
+import FetchNavbarn from './FetchNavbarn.jsx'
 import { Link } from 'react-router-dom'
 
 
 const SideBar = () => {
+
   return (
     <div className='sideBar pt-3'>
       <ul className="sideBarList list-unstyled">
@@ -40,44 +42,7 @@ const SideBar = () => {
 
       <div className='canal-div'>
         <h2 className='subTitle mb-4'>Subscriptions</h2>
-        <ul className="sid2Bar2 list-unstyled">
-          <li className="side-item mb-4">
-            <Link className='d-flex align-items-center text-decoration-none'>
-              <img src={GussieSingleton} alt="GussieSingleton" />
-              <p className="p-0">Gussie Singleton</p>
-            </Link>
-          </li>
-          <li className="side-item mb-4">
-            <Link className='d-flex align-items-center text-decoration-none'>
-              <img src={NoraFrancis} alt="NoraFrancis" />
-              <p className="p-0">Nora Francis</p>
-            </Link>
-          </li>
-          <li className="side-item mb-4">
-            <Link className='d-flex align-items-center text-decoration-none'>
-              <img src={BelleBriggs} alt="BelleBriggs" />
-              <p className="p-0">Belle Briggs</p>
-            </Link>
-          </li>
-          <li className="side-item mb-4">
-            <Link className='d-flex align-items-center text-decoration-none'>
-              <img src={EuniceCortez} alt="EuniceCortez" />
-              <p className="p-0">EuniceCortez</p>
-            </Link>
-          </li>
-          <li className="side-item mb-4">
-            <Link className='d-flex align-items-center text-decoration-none'>
-              <img src={EmmaHanson} alt="EmmaHanson" />
-              <p className="p-0">Emma Hanson</p>
-            </Link>
-          </li>
-          <li className="side-item mb-4">
-            <Link className='d-flex align-items-center text-decoration-none'>
-              <img src={LeahBerry} alt="LeahBerry" />
-              <p className="p-0">Leah Berry</p>
-            </Link>
-          </li>
-        </ul>
+       <FetchNavbarn/>
 
         <div className=''>
           <Link className='side-item setting d-flex align-items-center text-decoration-none'>
