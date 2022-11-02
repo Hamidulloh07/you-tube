@@ -30,7 +30,7 @@ const Channels = () => {
     <div>
       <SideBar />
       <div className="Channels py-2">
-        <img className="w-100 rounded-4 mt-1" src={user.thumbnailUrl} alt="picsum" />
+        <img className="w-100 rounded-4 mt-1" src={`https://picsum.photos/id/${user.id}/800/200/`} alt="picsum" />
 
         <div >
           <div className="d-flex align-items-center justify-content-between mt-3">
