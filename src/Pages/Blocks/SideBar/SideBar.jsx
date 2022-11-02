@@ -1,23 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import './_sideBar.scss'
-import Home from './image/Home.svg'
-import BelleBriggs from './image/BelleBriggs.svg'
-import EuniceCortez from './image/EuniceCortez.svg'
-import EmmaHanson from './image/EmmaHanson.svg'
-import Games from './image/Games.svg'
-import Library from './image/Library.svg'
-import Favourites from './image/Favourites.svg'
-import LeahBerry from './image/LeahBerry.svg'
-import History from './image/History.svg'
-import Watchlater from './image/Watchlater.svg'
-import GussieSingleton from './image/GussieSingleton.svg'
-import Trending from './image/Trending.svg'
-import NoraFrancis from './image/NoraFrancis.svg'
-import Setting from './image/Setting.svg'
-import Showmore from './image/Showmore.svg'
-import Likedvideos from './image/Likedvideos.svg'
-import Subscriptions from './image/Subscriptions.svg'
-import Music from './image/Music.svg'
+import Home from '../../../Assets/Images/Home.svg'
+import Games from '../../../Assets/Images/Games.svg'
+import Library from '../../../Assets/Images/Library.svg'
+import Favourites from '../../../Assets/Images/Favourites.svg'
+import History from '../../../Assets/Images/History.svg'
+import Watchlater from '../../../Assets/Images/Watchlater.svg'
+import Trending from '../../../Assets/Images/Trending.svg'
+import Setting from '../../../Assets/Images/Setting.svg'
+import Showmore from '../../../Assets/Images/Showmore.svg'
+import Likedvideos from '../../../Assets/Images/Likedvideos.svg'
+import Subscriptions from '../../../Assets/Images/Subscriptions.svg'
+import Music from '../../../Assets/Images/Music.svg'
 import FetchNavbarn from './FetchNavbarn.jsx'
 import { Link } from 'react-router-dom'
 
@@ -44,7 +38,7 @@ const SideBar = () => {
         <h2 className='subTitle mb-4'>Subscriptions</h2>
        <FetchNavbarn/>
 
-        <div className=''>
+        <div >
           <Link className='side-item setting d-flex align-items-center text-decoration-none'>
             <img src={Setting} alt="Setting" />
             <p className=''>

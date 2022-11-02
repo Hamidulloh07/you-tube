@@ -1,11 +1,10 @@
 import React from "react";
 
 import { Navigate, Route, Routes } from "react-router-dom";
-import SideBar from "../Components/SideBar/SideBar";
-import Video from "../Components/Video/Home";
-import Header from "../Pages/Blocks/Header";
+import Home from "../Pages/Video/Home";
+import Header from "../Pages/Blocks/Header/Header";
+import Video from "../Pages/Video/Video";
 import Channels from "../Pages/Channels/Channels";
-import Profile from "../Pages/VideoPage/Video";
 
 // import Chanel from "./Pages/Chanel/Chanel";
 
@@ -16,8 +15,8 @@ function Authen() {
           <div className="container1 d-flex align-items-start">
            
           <Routes>
-            <Route path="/" element={<Video />} />
-            <Route path="/video/:id" element={<Profile />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/video/:id" element={<Video />} />
             <Route path="/channel/:id" element={<Channels />} />
             <Route path="*" element={<Navigate to={'/'}/>} />
           </Routes> 

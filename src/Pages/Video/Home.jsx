@@ -1,7 +1,7 @@
 import { Button } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import SideBar from '../SideBar/SideBar'
+import SideBar from '../Blocks/SideBar/SideBar'
 import './Video.scss'
 
 const Video = () => {
@@ -32,13 +32,13 @@ const Video = () => {
    <SideBar />
         <div className="page">
           
-      <ul className="card-list list-unstyled mt-4">
+      <ul className="card-list list-unstyled mt-4 ">
         {
            users.slice(1, 100).map((user, i) => (
             <li key={user.id} className='card-item mb-3'>
               <Link to={'/video/' + user.id} className='text-decoration-none'>
                 
-                  <img className='card-img' src={user.thumbnailUrl} alt={user.title} width={250} height={155}/>
+                  <img className='video-img' src={user.thumbnailUrl} alt={user.title} width={250} height={155}/>
                 
                   
                   <h3 className="card-title">{user.title}</h3>

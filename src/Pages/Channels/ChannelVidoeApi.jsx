@@ -24,7 +24,7 @@ const ChannelVideoApi = () => {
     )
   }
   return (
-      <ul className='list-unstyled sideBar2'>
+      <ul className='list-unstyled sideBar2 m-0'>
         {
           users.slice(550, 650).map((user, i) => (
             <li key={user.id} className='itemm mb-3 d-block me-4 text-start'>

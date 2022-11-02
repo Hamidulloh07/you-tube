@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
-import { authContext } from "../Context/AuthContextProvider";
+import { authContext } from "../../Context/AuthContextProvider";
 import { Link, NavLink } from "react-router-dom";
 import { Button, Card, Input } from "@mui/material";
-import YouTube from "../Assets/Images/YouTube-Logo.wine.svg";
-import "../scss/_Login.scss";
+import YouTube from "../../Assets/Images/YouTube-Logo.wine.svg";
+import "./_Login.scss";
 
 const Login = () => {
   const { token, setToken } = useContext(authContext);

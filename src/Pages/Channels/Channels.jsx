@@ -1,5 +1,5 @@
 import React, { Component, useEffect, useState } from "react";
-import SideBar from "../../Components/SideBar/SideBar";
+import SideBar from "../Blocks/SideBar/SideBar";
 import "./Channel.scss";
 import useProfile from "../../Hooks/useProfile";
 import { Link, useParams } from "react-router-dom";
