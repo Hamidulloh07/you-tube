@@ -38,7 +38,7 @@ const Video = () => {
             <li key={user.id} className='card-item mb-3'>
               <Link to={'/video/' + user.id} className='text-decoration-none'>
                 
-                  <img className='card-img' src={`https://picsum.photos/id/${user.id}/250/155/`} alt={user.title} width={250} height={155}/>
+                  <img className='card-img' src={user.thumbnailUrl} alt={user.title} width={250} height={155}/>
                 
                   
                   <h3 className="card-title">{user.title}</h3>

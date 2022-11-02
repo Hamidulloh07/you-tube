@@ -30,7 +30,7 @@ const ComponentVideo = () => {
           users.slice(300, 350).map((user, i) => (
             <li key={user.id} className='itemm mb-3 d-block ms-4 text-start'>
               <Link className='text-decoration-none' to={'/video/' + user.id}>
-                <img className='rounded-4' src={`https://picsum.photos/id/${user.id}/250/155/`} alt={user.title} width={300} height={200}/>
+                <img className='rounded-4' src={user.thumbnailUrl} alt={user.title} width={300} height={200}/>
                 <h3 className='text-black fs-4'>{user.title}</h3>
                 <div>
                   <span>

@@ -29,7 +29,7 @@ const ChannelVideoApi = () => {
           users.slice(550, 650).map((user, i) => (
             <li key={user.id} className='itemm mb-3 d-block me-4 text-start'>
               <Link className='text-decoration-none' to={'/video/' + i}>
-                <img className='rounded-4' src={`https://picsum.photos/id/${user.id}/300/180/`} alt={user.title} width={300} height={180}/>
+                <img className='rounded-4' src={user.thumbnailUrl} alt={user.title} width={300} height={180}/>
                 <h3 className='text-black fs-4'>{user.title}</h3>
                 <div>
                   <span>

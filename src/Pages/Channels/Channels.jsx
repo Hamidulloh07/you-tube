@@ -10,7 +10,6 @@ import ChannelVideoApi from "./ChannelVidoeApi";
 import ChanelSingleApi from "./ChanelSingleApi";
 
 const Channels = () => {
-  const [cards, setCards] = useState([])
   const [user, setUser] = useProfile();
   const { id } = useParams();
 
@@ -24,22 +23,14 @@ const Channels = () => {
         console.log(err);
       });
 
-      fetch(`https://reqres.in/api/users/?page=2`)
-      .then((res) => res.json())
-      .then((data) => {
-        setCards(data.data)
-        console.log(data.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+
     
   }, [id]);
   return (
     <div>
       <SideBar />
       <div className="Channels py-2">
-        <img className="w-100 rounded-4 mt-1" src={`https://picsum.photos/id/${id * 9}/950/200/`} alt="picsum" />
+        <img className="w-100 rounded-4 mt-1" src={user.thumbnailUrl} alt="picsum" />
 
         <div >
           <div className="d-flex align-items-center justify-content-between mt-3">

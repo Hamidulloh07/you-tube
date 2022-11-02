@@ -36,7 +36,7 @@ const Profile = () => {
         <Button className="p-0 rounded-4">
           <img
             className="video-img"
-            src={`https://picsum.photos/id/${user.id}/900/480/`}
+            src={user.thumbnailUrl}
             alt={user.title}
             width={900}
             height={480}
@@ -79,7 +79,7 @@ const Profile = () => {
           <img
 
             className="avatar-profil me-3 mt-2 "
-            src={`https://picsum.photos/id/${user.id}/90/90/`}
+            src={user.thumbnailUrl}
             alt={user.title}
             width={90}
             height={90}

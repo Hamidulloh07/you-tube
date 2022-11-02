@@ -29,7 +29,7 @@ const ChanelSingleApi = () => {
           users.slice(160, 161).map((user, i) => (
             <div className="single-card d-flex align-items-start">
               <Link to={"/video/" + user.id}>
-                <img className="rounded-3" src={`https://picsum.photos/id/${user.id}/450/250/`} alt={user.title} width={450} height={250}/>
+                <img className="rounded-3" src={user.thumbnailUrl} alt={user.title} width={450} height={250}/>
               </Link>
                 <div className="ms-3 me-5">
                   <h3 className='mb-4 mt-3'>{user.title}</h3>
