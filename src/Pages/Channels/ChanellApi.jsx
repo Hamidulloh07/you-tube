@@ -5,7 +5,7 @@ const ChanellApi = () => {
   const [cards, setCards] = useState([])
 
   useEffect(() => {
-      fetch(`https://reqres.in/api/users/?page=1`)
+      fetch(`https://reqres.in/api/users/?page=2`)
       .then((res) => res.json())
       .then((data) => {
         setCards(data.data)

@@ -7,7 +7,7 @@ const FetchNavbarn = () => {
 
   useEffect(() => {
 
-    fetch("https://reqres.in/api/users/?page=2")
+    fetch("https://reqres.in/api/users/")
       .then((res) => res.json())
       .then((data) => {
         setUser(data.data)
