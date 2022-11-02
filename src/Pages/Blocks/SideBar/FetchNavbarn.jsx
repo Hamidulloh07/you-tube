@@ -8,11 +8,16 @@ const FetchNavbarn = () => {
   useEffect(() => {
     const apiFunction = async ()  => {
       const res  = await fetch("https://reqres.in/api/users/")
-      const data = res.json()
+      const data = await res.json()
       setUser(data.data)
     }
     apiFunction()
-
+    // fetch("https://reqres.in/api/users/")
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     setUser(data.data)
+    //   })
+    
   }, []);
 
 
